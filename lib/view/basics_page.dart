@@ -44,10 +44,28 @@ class BasicsPage extends StatelessWidget {
                               Padding(
                                   padding: const EdgeInsets.only(top: 160),
                                   child: profilImage(imageName: "profil.jpg")),
-                              Text("Un autre élément")
+                              Padding(
+                                  padding: EdgeInsets.all(5),
+                                  child: Row(
+                                    children: const [
+                                      Icon(
+                                        Icons.favorite_border,
+                                        color: Colors.white,
+                                      ),
+                                      Icon(
+                                        Icons.ac_unit_outlined,
+                                        color: Colors.white,
+                                      ),
+                                      Spacer(),
+                                      Text(
+                                        "Un autre élément",
+                                        style: TextStyle(color: Colors.white),
+                                      )
+                                    ],
+                                  ))
                             ],
                           ),
-                          Divider(
+                          const Divider(
                             color: Colors.red,
                             height: 10,
                             thickness: 1,
